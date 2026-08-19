@@ -1,0 +1,125 @@
+name: Alpha Feedback
+description: Share your experience with Agent Intelligence. Takes about 5 minutes.
+title: "[Alpha Feedback] "
+labels: ["alpha-feedback"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Agent Intelligence. Your feedback directly shapes what we build next.
+        Fill in as much or as little as you like — every response helps.
+
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+      placeholder: Jane Smith
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Both
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: Did the app install and open without issues?
+      options:
+        - "Yes"
+        - "Yes, but had to troubleshoot something"
+        - "No — couldn't get it running"
+    validations:
+      required: true
+
+  - type: textarea
+    id: install_notes
+    attributes:
+      label: If install was difficult — what happened?
+      placeholder: Leave blank if it was fine
+
+  - type: checkboxes
+    id: sources
+    attributes:
+      label: Which AI agents do you use that Agent Intelligence picked up?
+      options:
+        - label: Claude Code
+        - label: Claude Cowork
+        - label: Codex
+        - label: Grok
+        - label: Other (describe below)
+
+  - type: dropdown
+    id: ollama
+    attributes:
+      label: Did you have Ollama installed before testing?
+      options:
+        - "Yes, already had it"
+        - "No — installed it for this"
+        - "No — skipped / used basic mode"
+        - "Not sure what Ollama is"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: data_showed_up
+    attributes:
+      label: Did your past agent sessions show up in the app?
+      options:
+        - "Yes, most or all of them"
+        - "Yes, but only some"
+        - "No sessions appeared"
+        - "Couldn't tell"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_worked
+    attributes:
+      label: What worked well or impressed you?
+      placeholder: Anything you found useful, interesting, or surprising
+
+  - type: textarea
+    id: what_didnt
+    attributes:
+      label: What didn't work, confused you, or frustrated you?
+      placeholder: Bugs, missing features, confusing UI — anything goes
+
+  - type: textarea
+    id: missing
+    attributes:
+      label: What's the one thing you wish it did that it doesn't?
+      placeholder: Your most wanted feature
+
+  - type: dropdown
+    id: value
+    attributes:
+      label: Based on what you saw — would you pay for this?
+      options:
+        - "Yes, I'd pay for this now"
+        - "Yes, once it's more polished"
+        - "Maybe — depends on price/features"
+        - "Probably not"
+        - "No"
+    validations:
+      required: true
+
+  - type: input
+    id: price
+    attributes:
+      label: What monthly price feels right to you? (optional)
+      placeholder: e.g. $10/mo, $25/mo, free tier only
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else you want to tell us?
+      placeholder: Open floor
