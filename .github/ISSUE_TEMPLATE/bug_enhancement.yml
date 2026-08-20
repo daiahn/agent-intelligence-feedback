@@ -1,0 +1,29 @@
+name: Bug or Enhancement
+description: Something broken or something you'd love to see? Log it here — takes 30 seconds.
+title: "[Feedback] "
+labels: ["alpha-feedback", "triage"]
+body:
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: What is this?
+      options:
+        - Bug (something broken)
+        - Enhancement (something you'd like)
+    validations:
+      required: true
+
+  - type: input
+    id: summary
+    attributes:
+      label: One line summary
+      placeholder: e.g. "Sessions don't show up after reinstalling" or "Would love a weekly cost summary"
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: Any extra detail? (optional)
+      placeholder: Steps to reproduce, or more context — leave blank if the summary says it all
