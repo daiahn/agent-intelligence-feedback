@@ -112,6 +112,17 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: team_budget
+    attributes:
+      label: Do you manage a team budget?
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure / it's complicated"
+    validations:
+      required: true
+
   - type: input
     id: price
     attributes:
