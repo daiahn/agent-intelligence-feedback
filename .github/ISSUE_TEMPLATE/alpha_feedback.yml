@@ -13,8 +13,8 @@ body:
   - type: input
     id: name
     attributes:
-      label: Your name
-      placeholder: Jane Smith
+      label: Your first name only
+      placeholder: Jane
     validations:
       required: true
 
