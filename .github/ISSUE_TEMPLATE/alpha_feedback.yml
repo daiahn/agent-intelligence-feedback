@@ -99,35 +99,40 @@ body:
       label: What's the one thing you wish it did that it doesn't?
       placeholder: Your most wanted feature
 
-  - type: dropdown
-    id: value
+  - type: textarea
+    id: value_vision
     attributes:
-      label: Based on what you saw — would you pay for this?
-      options:
-        - "Yes, I'd pay for this now"
-        - "Yes, once it's more polished"
-        - "Maybe — depends on price/features"
-        - "Probably not"
-        - "No"
-    validations:
-      required: true
+      label: How can you imagine this app helping individuals, managers, and executive leaders who are trying to effectively utilize AI?
+      placeholder: Think beyond what you saw today — what would make this genuinely useful in your work or organization?
 
-  - type: dropdown
-    id: team_budget
+  - type: markdown
     attributes:
-      label: Do you manage a team budget?
-      options:
-        - "Yes"
-        - "No"
-        - "Not sure / it's complicated"
-    validations:
-      required: true
+      value: |
+        **Pricing questions** — We plan to release this as a freemium app, targeting paid users in the enterprise space. We'd love your honest reaction to pricing.
 
   - type: input
-    id: price
+    id: price_too_cheap
     attributes:
-      label: What monthly price feels right to you? (optional)
-      placeholder: e.g. $10/mo, $25/mo, free tier only
+      label: At what monthly price per person would this feel too cheap — like you'd doubt the quality?
+      placeholder: e.g. $2/mo
+
+  - type: input
+    id: price_bargain
+    attributes:
+      label: At what monthly price per person would this feel like a bargain — great value?
+      placeholder: e.g. $10/mo
+
+  - type: input
+    id: price_expensive
+    attributes:
+      label: At what monthly price per person would this start feeling expensive — but you'd still consider it?
+      placeholder: e.g. $30/mo
+
+  - type: input
+    id: price_too_expensive
+    attributes:
+      label: At what monthly price per person would this be too expensive — you'd never buy it?
+      placeholder: e.g. $75/mo
 
   - type: textarea
     id: other
