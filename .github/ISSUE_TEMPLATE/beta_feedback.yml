@@ -1,0 +1,82 @@
+name: Beta Feedback
+description: Share your experience with Agent Intelligence.
+title: "[Beta Feedback] "
+labels: ["feedback"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Agent Intelligence. Your feedback directly shapes what we build next.
+        Fill in as much or as little as you like — every response helps.
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Both
+
+  - type: textarea
+    id: first_impressions
+    attributes:
+      label: "What was your impression?"
+      
+  - type: textarea
+    id: missing
+    attributes:
+      label: "What's the one feature or insight it could provide that you didn't see?"
+      
+  - type: textarea
+    id: other
+    attributes:
+      label: Let us know if you have any other comments.
+
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload relevant files
+      description: "Drag and drop any relevant screenshots or log files."
+    validations:
+      required: false
+      accept: ".png,.jpg,.gif,.log,.txt,.zip"
+    
+  - type: textarea
+    id: install_notes
+    attributes:
+      label: If install was difficult — what happened?
+      placeholder: Leave blank if it was fine
+
+  - type: checkboxes
+    id: sources
+    attributes:
+      label: Which AI harnesses do you use that Agent Intelligence picked up?
+      options:
+        - label: Claude Cowork
+        - label: Claude Code
+        - label: ChatGPT
+        - label: Codex
+        - label: Gemini
+        - label: Grok
+        - label: Other (describe below)
+
+  - type: dropdown
+    id: ollama
+    attributes:
+      label: Did you have Ollama installed before testing?
+      options:
+        - "Yes, already had it"
+        - "No — installed it for this"
+        - "No — skipped / used basic mode"
+        - "Not sure what Ollama is"
+
+  - type: dropdown
+    id: data_showed_up
+    attributes:
+      label: Did your AI sessions show up in the app?
+      options:
+        - "Yes, it seemed like most of them"
+        - "Yes, but only some"
+        - "No sessions appeared"
