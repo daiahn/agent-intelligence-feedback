@@ -1,5 +1,5 @@
 name: Beta Feedback
-description: Share your experience with Agent Intelligence.  Be honest, but also be aware that this feedback is public.
+description: Share your experience with Agent Intelligence.  
 title: "[Beta Feedback] "
 labels: ["feedback"]
 body:
@@ -7,38 +7,33 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for testing Agent Intelligence. Your feedback directly shapes what we build next.
-        Fill in as much or as little as you like — every response helps.  NOTE: All feedback here is PUBLICLY ACCESSIBLE.
+        Thanks for testing Agent Intelligence.
+        Be honest, but also be aware that this feedback is public.
 
   - type: dropdown
     id: os
     attributes:
       label: Operating system
       options:
-        - macOS
         - Windows
-        - Both
+        - Mac
+        - Linux
 
   - type: textarea
     id: first_impressions
     attributes:
-      label: "What was your impression?"
+      label: "How interested are you in an AI Health Check app? And how well are we delivering that??"
       
   - type: textarea
     id: missing
     attributes:
-      label: "What's the one feature or insight it could provide that you didn't see?"
-      
-  - type: textarea
-    id: other
-    attributes:
-      label: Let us know if you have any other comments.
+      label: "Is there a feature or insight it didn't provide that you really wanted?"
 
   - type: upload
     id: screenshots
     attributes:
-      label: Upload relevant files
-      description: "Drag and drop any relevant screenshots or log files."
+      label: "Feel free to share screenshots if that's helpful to your feedback"
+      description: "Drag and drop screenshots or files."
     validations:
       required: false
       accept: ".png,.jpg,.gif,.log,.txt,.zip"
