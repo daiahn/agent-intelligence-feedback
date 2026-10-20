@@ -1,5 +1,5 @@
 name: Beta Feedback
-description: Share your experience with Agent Intelligence.
+description: Share your experience with Agent Intelligence.  Be honest, but also be aware that this feedback is public.
 title: "[Beta Feedback] "
 labels: ["feedback"]
 body:
@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         Thanks for testing Agent Intelligence. Your feedback directly shapes what we build next.
-        Fill in as much or as little as you like — every response helps.
+        Fill in as much or as little as you like — every response helps.  NOTE: All feedback here is PUBLICLY ACCESSIBLE.
 
   - type: dropdown
     id: os
